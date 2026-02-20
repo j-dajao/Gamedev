@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://botynqocn6apd"]
+
+[ext_resource type="Script" uid="uid://dpaxs4yys26so" path="res://Player1.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dmtbtfbo5ggg" path="res://icon.svg" id="2_onrkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i3pqv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
+size = Vector2(312, 20)
+
+[node name="Main" type="Node2D" unique_id=1558283613]
+metadata/_edit_horizontal_guides_ = [19.0]
+
+[node name="Player1" type="CharacterBody2D" parent="." unique_id=155056040]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player1" unique_id=1322722393]
+position = Vector2(109, 86)
+shape = SubResource("CircleShape2D_i3pqv")
+debug_color = Color(0.8238113, 0.24152166, 0.7901808, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player1" unique_id=847404477]
+position = Vector2(108, 86)
+scale = Vector2(0.2109375, 0.2109375)
+texture = ExtResource("2_onrkg")
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=382619637]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1415463162]
+position = Vector2(252, 110)
+shape = SubResource("RectangleShape2D_i3pqv")
+
+[node name="ColorRect" type="ColorRect" parent="Ground" unique_id=654698397]
+offset_left = 99.0
+offset_top = 101.0
+offset_right = 404.0
+offset_bottom = 120.0
+color = Color(0.6632064, 0.9843227, 0.47683525, 1)
