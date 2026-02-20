@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bl28c30lck1ef"]
+
+[ext_resource type="Script" uid="uid://dcbaw6n2l7oqb" path="res://label.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D" unique_id=567122757]
+
+[node name="Label" type="Label" parent="." unique_id=1304751069]
+offset_left = 475.0
+offset_top = 192.0
+offset_right = 668.0
+offset_bottom = 240.0
+text = "hello world, from dajao!!!"
+script = ExtResource("1_ig7tw")
